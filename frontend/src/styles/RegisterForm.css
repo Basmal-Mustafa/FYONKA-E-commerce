@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.register-container{ 
+    text-align: center;
+    justify-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 40px;
+}
+.register-container h1{
+    margin: 0px;
+    color: #0f145b;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.register-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.register-form input{
+    border: none;
+    border-bottom: 1px solid lightslategray;
+    padding: 0px;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+.register-form input:placeholder-shown{
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+.register-form input:focus {
+    outline: none;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+.register-form button{
+    width: 450px;
+    height: 35px;
+    border: none;
+    background-color: #d51055;
+    color: #ffff;
+    border-radius: 8px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 0;
+}
+button {
+    cursor: pointer;
+}
+
+.return-link{
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.return-link a{
+    text-decoration: none;
+    color: black;
+}

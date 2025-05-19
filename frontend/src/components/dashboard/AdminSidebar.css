@@ -1,0 +1,31 @@
+.sidebar {
+    min-width: 200px;
+    min-height: 800px;
+  }
+  .text-sidebar {
+    font-size: 15px;
+  }
+  .sidebar-text {
+    color: #ec4899; 
+    font-size: 1.125rem;
+    margin-bottom: 0; 
+    text-decoration: none !important;
+  }
+  .icon {
+    height: auto; 
+  }
+.nav-link {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    padding: 8px 12px;
+    color: #d1d5db; 
+    transition: 0.3s ease;
+    border-radius: 12px;
+    text-decoration: none;
+  }
+  .nav-link:hover {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,124 @@
+.contact-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+    /* padding: 0px 30px; */
+    margin-bottom: 40px;
+    margin-top: 30px;
+    /* flex-wrap: wrap; */
+}
+
+.contact-image img {
+    width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* .contact-info {
+    max-width: 400px;
+}*/
+
+.contact-info h2 {
+    color: #0f145b;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #444;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-form-container {
+    /* max-width: 600px; */
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.contact-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0f145b;
+}
+.underline {
+    width: 60px;
+    height: 3px;
+    background-color: lightgray;
+    margin: 8px auto 20px;
+}
+.contact-description {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .contact-form .form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 900px; /* ← خليها نفس الـ max-width زي الباقي */
+    justify-content: center;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .full-width {
+    width: 100%;
+    max-width: 900px;
+    margin: 0;
+    display: block;
+  }
+  
+  .textarea {
+    min-height: 200px;
+    resize: vertical;
+    width: 100%;
+    max-width: 900px; /* ← اتأكد إن الـ textarea زي باقي العناصر */
+  }
+  
+  
+
+
+.privacy-note {
+    font-size: 12px;
+    color: gray;
+    margin: 10px 0 20px;
+}
+
+.send-button {
+    background-color: #d51055;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #b10f48;
+}
+
+  

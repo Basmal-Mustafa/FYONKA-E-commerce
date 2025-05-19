@@ -1,0 +1,139 @@
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.checkout-form {
+  width: 40%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.checkout-form h2 {
+  color: #0f145b;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 5px;
+  padding-bottom: 5px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 17px;
+}
+.checkout-form input:placeholder-shown{
+  font-size: 17px;
+  padding-bottom: 5px;
+}
+.checkout-form input:focus {
+  outline: none;
+}
+
+.checkout-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 30px;
+  background-color: #b30d47;
+  opacity: 0.7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.checkout-form button:hover {
+  opacity: 1;
+}
+
+.order-summary {
+  width: 40%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.order-summary h2 {
+  color: #0f145b;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.order-details {
+  margin-top: 20px;
+}
+
+.order-id {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.products {
+  margin-bottom: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.total-amount {
+  font-size: 18px;
+  color: #0f145b;
+  font-weight: bold;
+}
+
+
+  /* Extra Small - xs */
+@media (min-width: 480px) {
+  /* styles for ≥480px */
+}
+
+/* Small - sm */
+@media (min-width: 640px) {
+  /* styles for ≥640px */
+}
+
+/* Medium - md */
+@media (min-width: 768px) {
+  /* styles for ≥768px */
+}
+
+/* Large - lg */
+@media (min-width: 1024px) {
+  /* styles for ≥1024px */
+}
+
+/* Extra Large - xl */
+@media (min-width: 1280px) {
+  /* styles for ≥1280px */
+}
+
+/* 2X Large - 2xl */
+@media (min-width: 1536px) {
+  /* styles for ≥1536px */
+}
+  

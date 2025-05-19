@@ -1,0 +1,187 @@
+/ecommerce                       Root project folder
+├── .env                          Environment variables for deployment (e.g., API URLs)
+├── package.json                  Root scripts (e.g., concurrently for starting both frontend and backend)
+├── package-lock.json             Locks versions of dependencies for consistency
+├── .gitignore                    Git ignore file (e.g., node_modules, .env files)
+
+├── /frontend                     Frontend app built with React + Vite + Redux
+│   ├── package.json              Frontend dependencies (React, Redux, Axios, Vite, etc.)
+│   ├── .env                      Frontend-specific environment variables (e.g., VITE_API_URL)
+│   ├── vite.config.js            Vite configuration (for proxy, plugins, etc.)
+
+│   ├── /public                   Static files like index.html, images, etc.
+
+│   ├── /src                      Main source code for the frontend app
+│   │   ├── index.jsx             Entry point of the app; renders <App />
+│   │   ├── App.jsx               Main component that includes routing setup
+│   │   └── Routes.jsx            Centralized route configuration using React Router v6
+
+
+│   │   ├── /api                  API calls using Axios
+│   │   │   ├── axiosClient.js    Pre-configured Axios instance
+│   │   │   ├── auth.api.js       Authentication API calls (login, register)
+│   │   │   ├── user.api.js       User-related API calls (update profile)
+│   │   │   ├── product.api.js    Product-related API calls (CRUD)
+│   │   │   ├── order.api.js      Order-related API calls (place order, order history)
+│   │   │   └── review.api.js     Review-related API calls (add, fetch reviews)
+
+│   │   ├── /components           Reusable UI components
+│   │   │   ├── /layout           App-wide components (Header, Footer, Sidebar)
+│   │   │   │   ├── Header.jsx    Main navigation bar
+│   │   │   │   ├── Header.module.css Scoped CSS for Header
+│   │   │   │   ├── Footer.jsx    Footer component
+│   │   │   │   ├── Footer.module.css Scoped CSS for Footer
+│   │   │   │   ├── Sidebar.jsx   Sidebar for admin pages
+│   │   │   │   ├── Sidebar.module.css Scoped CSS for Sidebar
+
+│   │   │   ├── /common           General-purpose UI components
+│   │   │   │   ├── Button.jsx    Reusable button component
+│   │   │   │   ├── Button.module.css Scoped CSS for Button
+│   │   │   │   ├── Loader.jsx    Loading spinner component
+│   │   │   │   ├── Loader.module.css Scoped CSS for Loader
+│   │   │   │   ├── Modal.jsx     Modal for dialogues
+│   │   │   │   ├── Modal.module.css Scoped CSS for Modal
+│   │   │   │   └── Message.jsx   Displays success or error messages
+│   │   │   │   └── Message.module.css Scoped CSS for Message
+│   │   │   ├── /product          Product-focused UI components
+│   │   │   │   ├── ProductCard.jsx Displays individual product in list
+│   │   │   │   ├── ProductCard.module.css Scoped CSS for ProductCard
+│   │   │   │   ├── RatingStars.jsx Displays product ratings
+│   │   │   │   ├── RatingStars.module.css Scoped CSS for RatingStars
+│   │   │   │   └── ReviewForm.jsx Form for submitting reviews
+│   │   │   │   └── ReviewForm.module.css Scoped CSS for ReviewForm
+│   │   │   ├── /cart             Cart-related UI components
+│   │   │   │   └── CartItem.jsx  Displays individual cart items
+│   │   │   │   └── CartItem.module.css Scoped CSS for CartItem
+│   │   │   ├── /admin            Admin-specific components (tables, controls)
+│   │   │   │   ├── ProductTable.jsx Displays list of products for admin
+│   │   │   │   ├── ProductTable.module.css Scoped CSS for ProductTable
+│   │   │   │   ├── UserTable.jsx  Displays list of users for admin
+│   │   │   │   ├── UserTable.module.css Scoped CSS for UserTable
+│   │   │   │   ├── OrderTable.jsx Displays list of orders for admin
+│   │   │   │   └── OrderTable.module.css Scoped CSS for OrderTable
+
+│   │   ├── /pages                Pages rendered by React Router
+│   │   │   ├── /user             User-specific pages
+│   │   │   │   ├── LoginPage.jsx Login page
+│   │   │   │   ├── LoginPage.module.css Scoped CSS for LoginPage
+│   │   │   │   ├── RegisterPage.jsx Register page
+│   │   │   │   ├── RegisterPage.module.css Scoped CSS for RegisterPage
+│   │   │   │   ├── UserProfilePage.jsx User profile management page
+│   │   │   │   ├── UserProfilePage.module.css Scoped CSS for UserProfilePage
+│   │   │   │   └── OrderHistoryPage.jsx User order history
+│   │   │   │   └── OrderHistoryPage.module.css Scoped CSS for OrderHistoryPage
+│   │   │   ├── /admin            Admin-specific pages
+│   │   │   │   ├── AdminDashboardPage.jsx Admin homepage
+│   │   │   │   ├── AdminDashboardPage.module.css Scoped CSS for AdminDashboardPage
+│   │   │   │   ├── ProductManagementPage.jsx List and manage products
+│   │   │   │   ├── ProductManagementPage.module.css Scoped CSS for ProductManagementPage
+│   │   │   │   ├── AddEditProductPage.jsx Add or edit products
+│   │   │   │   ├── AddEditProductPage.module.css Scoped CSS for AddEditProductPage
+│   │   │   │   ├── OrderManagementPage.jsx Manage orders
+│   │   │   │   ├── OrderManagementPage.module.css Scoped CSS for OrderManagementPage
+│   │   │   │   ├── UserManagementPage.jsx Manage users
+│   │   │   │   └── UserManagementPage.module.css Scoped CSS for UserManagementPage
+│   │   │   ├── /shop             Customer-facing pages
+│   │   │   │   ├── HomePage.jsx  Main homepage
+│   │   │   │   ├── HomePage.module.css Scoped CSS for HomePage
+│   │   │   │   ├── ProductListPage.jsx List all products
+│   │   │   │   ├── ProductListPage.module.css Scoped CSS for ProductListPage
+│   │   │   │   ├── ProductDetailsPage.jsx Individual product details
+│   │   │   │   ├── ProductDetailsPage.module.css Scoped CSS for ProductDetailsPage
+│   │   │   │   ├── CartPage.jsx  View shopping cart
+│   │   │   │   ├── CartPage.module.css Scoped CSS for CartPage
+│   │   │   │   ├── CheckoutPage.jsx Checkout and payment
+│   │   │   │   ├── CheckoutPage.module.css Scoped CSS for CheckoutPage
+│   │   │   │   └── OrderSuccessPage.jsx Order confirmation page
+│   │   │   │   └── OrderSuccessPage.module.css Scoped CSS for OrderSuccessPage
+│   │   │   └── /shared           Error or fallback pages
+│   │   │       ├── NotFoundPage.jsx 404 Page not found
+│   │   │       ├── NotFoundPage.module.css Scoped CSS for NotFoundPage
+│   │   │       └── UnauthorizedPage.jsx Unauthorized access page
+│   │   │       └── UnauthorizedPage.module.css  Scoped CSS for UnauthorizedPage
+
+│       ├── /context                 React Context API
+│       │    ├── AuthContext.jsx     Auth provider (login/logout, current user)
+│       │    ├── CartContext.jsx     Cart provider
+│       │    └── ProductContext.jsx  Optional: global product state
+
+│   │   ├── /styles               Global CSS styles and variables
+│   │   │   ├── variables.css     CSS variables (colors, spacing, etc.)
+│   │   │   ├── main.css          Global styles (resets, layout)
+│   │   │   └── App.css           App-wide specific styles
+
+│   │   ├── /hooks                Custom React hooks
+│   │   │   ├── useAuth.js        Hook for authentication logic
+│   │   │   └── useCart.js        Hook for cart manipulation
+
+│   │   ├── /utils                Utility functions
+│   │   │   └── formatCurrency.js Utility to format currency values
+
+├── /backend                       Backend built with Node.js and Express
+│   ├── server.js                  Entry point for the Express app
+│   ├── package.json               Backend dependencies and scripts
+│   ├── .env                       Environment variables (MONGO_URI, JWT_SECRET, etc.)
+│
+│   ├── /config                    Configuration files
+│   │   └── db.config.js           Database configuration
+│   │   └── db.connection.js       Database connection setup using Mongoose
+│
+│   ├── /controllers               Controllers that handle API business logic
+│   │   ├── auth.controller.js     Auth logic (login, register, token management)
+│   │   ├── product.controller.js  CRUD operations for products
+│   │   ├── user.controller.js     User management (update profile)
+│   │   ├── order.controller.js    Order handling (submit, fetch orders)
+│   │   └── review.controller.js   Review handling (add, fetch, delete reviews)
+│
+│   ├── /middleware                Custom Express middleware
+│   │   ├── auth.middleware.js     Verifies JWT token
+│   │   ├── admin.middleware.js    Ensures user is an admin
+│   │   └── error.middleware.js    Handles errors and sends formatted responses
+│   │   └── user.validator.middleware.js    Used for input validation (likely validating user registration, login, or other user-specific data).
+
+│
+│   ├── /models                    Mongoose models (schemas)
+│   │   ├── user.model.js          User model for MongoDB
+│   │   ├── product.model.js       Product model
+│   │   ├── order.model.js         Order model
+│   │   └── review.model.js        Product review schema
+│
+│   ├── /routes                    Express route handlers
+│   │   ├── auth.routes.js         /api/auth (login, register)
+│   │   ├── product.routes.js      /api/products (CRUD operations)
+│   │   ├── user.routes.js         /api/users (profile, admin management)
+│   │   ├── order.routes.js        /api/orders (order submission and history)
+│   │   └── review.routes.js       /api/products/:productId/reviews (review operations)
+│
+│   ├── /utils                     Utility/helper functions
+│   │   └── generateToken.js       Generates JWT token
+│   │   └── hashPassword.js        Generates JWT token
+│
+│   ├── /validators                Input validation logic
+│   │   ├── user.validator.js      Validates user data
+│   │   └── product.validator.js   Validates product data
+│
+│   └── /constants                 constants
+│       └── roles.js               Role definitions (e.g., ADMIN, USER)
+
+_________________________________________________________________________________________________________________________________
+
+
+/ecommerce
+├── /frontend
+│   ├── /src
+│   │   ├── index.jsx
+│   │   ├── App.jsx
+│   │   ├── Routes.jsx
+│   │   ├── /api
+│   │   ├── /components
+│   │   ├── /pages
+│   │   ├── /styles
+│   │   ├── /utils
+│   │   ├── /store                # ✅ NEW: Redux store setup
+│   │   │   ├── index.js          # Redux configuration with reducers
+│   │   │   ├── authSlice.js      # Authentication slice
+│   │   │   ├── cartSlice.js      # Cart slice
+│   │   │   └── productSlice.js   # Optional: product state
+

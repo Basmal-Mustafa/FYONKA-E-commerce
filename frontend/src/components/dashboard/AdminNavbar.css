@@ -1,0 +1,21 @@
+.navbar-custom {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.logo-section {
+  width: max(10%, 80px);
+}
+.logo-img {
+  width: 40px;
+}
+.brand-title {
+  font-size: 1.25rem; 
+  font-weight: bold;
+  padding-top: 15px;
+  color: #0f145b; 
+}
+.logout-btn {
+  font-size: 0.8rem; 
+  margin: 4px;
+  padding: 10px !important;
+}

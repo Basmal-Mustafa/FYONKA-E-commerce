@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.login-container{
+    text-align: center;
+    justify-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 40px;
+}
+
+.login-container h1{
+    margin: 0px;
+    color: #0f145b;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.login-form input{
+    border: none;
+    border-bottom: 1px solid lightslategray;
+    padding: 0px;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+.login-form input:placeholder-shown{
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+.login-form input:focus {
+    outline: none;
+}
+.login-form button{
+    width: 450px;
+    height: 35px;
+    border: none;
+    background-color: #d51055;
+    color: #ffff;
+    border-radius: 8px;
+    font-size: 14px;
+}
+button {
+    cursor: pointer;
+}
+
+
+.login-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-links a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: 100;
+    font-style: normal;
+    padding-top: 20px;
+}
+
+
+/* .login-links a:hover{
+    background-color: lightgray;
+    padding: 5px;
+} */

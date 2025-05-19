@@ -1,0 +1,37 @@
+body{
+    background-color: fffff;
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+
+.top-navbar{
+    background-color: 
+    #d51055;
+}
+.top-navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 15px 30px;
+}
+.top-icon{
+    color: #ffff;
+    font-size: 20px;
+}
+.top-icon:hover{
+    color: lightgray;
+}
+
+
+@media (max-width: 1040px){
+    .top-navbar ul{
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 15px 30px;
+        justify-content: center;
+    }
+}

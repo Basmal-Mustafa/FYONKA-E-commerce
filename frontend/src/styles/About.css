@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.fyonka-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.fyonka-container img {
+    max-width: 600px;
+}
+.about-container h2 {
+    font-weight: 600;
+    color: #0f145b;
+}
+.about-container p{
+    width: 550px;
+    margin-top: 0px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.our-container{
+    width: 100%;
+    height: auto;
+    background-color: #eeeff0;
+    box-shadow: 0 0 10px #00000012;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 70px;
+}
+.our-container .block{
+    width: 500px;
+    margin-left: 50px;
+    padding: 90px 10px;
+}
+.block h2{
+    color: #d51055;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.block p{
+    line-height: 1.5;
+}
+
+.about-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 80px auto;
+    gap: 20px;
+}
+
+.left-img {
+    width: 56%;
+}
+
+.right-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 50%;
+}
+
+.right-img1,
+.right-img2 {
+    width: 100%;
+    height: auto;
+}
